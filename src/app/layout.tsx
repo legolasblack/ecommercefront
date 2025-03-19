@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
+import { HeroUiProvider } from "./providers/HeroUiProviders";
 
 
 export const metadata: Metadata = {
@@ -15,8 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <p>aqui es desde layout principal</p>
-        {children}
+       <HeroUiProvider>
+       {children}
+       </HeroUiProvider>
       </body>
     </html>
   );

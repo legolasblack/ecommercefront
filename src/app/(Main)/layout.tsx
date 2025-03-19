@@ -7,7 +7,7 @@ export default function RootLayout({
 }>) {
   return (
         <div>
-            <p>Hola que hace desde el layout</p>
+           
             {children}
         </div>
   );
