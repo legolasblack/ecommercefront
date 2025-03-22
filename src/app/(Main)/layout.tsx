@@ -1,3 +1,5 @@
+import { Navbar } from "@heroui/react";
+import NavbarMain from "../components/NavbarMain";
 
 
 export default function RootLayout({
@@ -7,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
         <div>
-           
+           <NavbarMain/>
             {children}
         </div>
   );
