@@ -1,0 +1,9 @@
+.navbarcustom{
+    /* border: 2px solid red; */
+    margin-top: 10px;
+}
+
+.navbarcustom header{
+   /*  border: greenyellow solid 2px; */
+    max-width: none !important;
+}

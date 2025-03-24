@@ -1,6 +1,6 @@
 'use client'
 
-import logo from '../../../public/logoEmpresa.png'
+import styles from './Navbar.module.css'
 import React from "react";
 import {
   Navbar,
@@ -39,20 +39,25 @@ export default function App() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar onMenuOpenChange={setIsMenuOpen} className={`${styles.navbarcustom} justify-between !max-w-none`} style={{ maxWidth: 'none' }}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand>
-         <Image alt='logotipo' src='/logoEmpresa.png' width={100} height={80} style={{marginTop:'25px'}}/>
+         <Image
+          alt='logotipo'
+          src='/logoEmpresa.png'
+           width={85} height={70} 
+           style={{minWidth:'85px'}} 
+           className={`${styles.bordercustom}block !sm:hidden`}/>
           <p className="font-bold text-inherit"><span style={{ textTransform:'uppercase'}}>Market Aquatic  Plants</span>
           </p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden sm:flex gap-4" justify="center" >
         <NavbarItem>
           <Link color="foreground" href="#">
             Features

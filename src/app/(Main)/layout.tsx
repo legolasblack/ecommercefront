@@ -1,5 +1,5 @@
-import { Navbar } from "@heroui/react";
-import NavbarMain from "../components/NavbarMain";
+
+import NavbarMain from "../components/navbar/NavbarMain";
 
 
 export default function RootLayout({
